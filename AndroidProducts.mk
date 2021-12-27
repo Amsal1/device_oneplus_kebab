@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_kebab.mk
+    $(LOCAL_DIR)/cherish_kebab.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_kebab-user \
-    havoc_kebab-userdebug \
-    havoc_kebab-eng
+    cherish_kebab-user \
+    cherish_kebab-userdebug \
+    cherish_kebab-eng
