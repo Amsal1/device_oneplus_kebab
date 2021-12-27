@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_kebab.mk
+    $(LOCAL_DIR)/aosp_kebab.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_kebab-user \
-    havoc_kebab-userdebug \
-    havoc_kebab-eng
+    aosp_kebab-user \
+    aosp_kebab-userdebug \
+    aosp_kebab-eng

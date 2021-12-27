@@ -21,25 +21,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from kebab device
 $(call inherit-product, device/oneplus/kebab/device.mk)
 
-# Inherit some common Havoc-OS stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit some common Project-Elixir stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Official
-HAVOC_BUILD_TYPE := Official
-HAVOC_MAINTAINER := Chandu
-HAVOC_GROUP_URL := https://t.me/havoc_oneplus8
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := havoc_kebab
+PRODUCT_NAME := aosp_kebab
 PRODUCT_DEVICE := kebab
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := KB2003
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+# Elixir
+IS_PHONE := true
+TARGET_SUPPORTS_QUICK_TAP := true
+CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ACORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+EXTRA_UDFPS_ANIMATIONS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus8T \
