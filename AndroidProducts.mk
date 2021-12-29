@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_kebab.mk
+    $(LOCAL_DIR)/aospa_kebab.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_kebab-user \
-    xtended_kebab-userdebug \
-    xtended_kebab-eng
+    aospa_kebab-user \
+    aospa_kebab-userdebug \
+    aospa_kebab-eng

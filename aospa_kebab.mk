@@ -16,26 +16,19 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from kebab device
 $(call inherit-product, device/oneplus/kebab/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit from the AOSPA configuration.
+$(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
-PRODUCT_NAME := xtended_kebab
+PRODUCT_NAME := aospa_kebab
 PRODUCT_DEVICE := kebab
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := KB2003
-
-# Official and Maintainer Details
-XTENDED_BUILD_TYPE := OFFICIAL
-
-XTENDED_BUILD_MAINTAINER := Amsal_Khan
-
-XTENDED_BUILD_DONATE_URL := https://paypal.me/cjh1249131356
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 

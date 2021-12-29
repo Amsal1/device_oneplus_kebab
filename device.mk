@@ -22,6 +22,9 @@
 # definition file).
 #
 
+# Platform
+TARGET_BOARD_PLATFORM := kona
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -32,3 +35,6 @@ PRODUCT_PACKAGES += \
 
 # Inherit from oneplus sm8250-common
 $(call inherit-product, device/oneplus/sm8250-common/common.mk)
+
+# Boot animation resolution.
+TARGET_BOOT_ANIMATION_RES := 1080
